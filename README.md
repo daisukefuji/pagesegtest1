@@ -21,3 +21,9 @@ cargo run pageseg1.tif
 ```
 
 Then, `/tmp/lept/pageseg/debug.pdf` will be created.
+
+### TIPS
+Create bilevel gray image
+```bash
+convert -verbose -type bilevel -depth 1 input.jpg output.tif
+```
